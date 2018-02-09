@@ -1,0 +1,8 @@
+Flask==0.12.2
+numpy==1.13.3
+opencv-python==3.3.0
+Pillow==4.3.0
+protobuf==3.5.0.post1
+six==1.11.0
+tensorflow-gpu==1.3.0
+

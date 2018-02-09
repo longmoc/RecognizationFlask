@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="width:100%; margin-top:20px">
+    <div style="width:85%; float:center">
+        <div><p style=""><a href="javascript:history.back()">Back</a></p></div>
+        <p style="">
+            <img src="{{ url_for('static', filename = image_raw) }}" style="width:30%">
+            <img src="{{ url_for('static', filename = image_edge) }}" style="width:30%">
+            <div>{{image_name}}: Label: {{label}} - {{pred}}%</div>
+        </p>
+        <!--{% for label in labels %}-->
+        <!--<div><p style="text-align:center; margin-top:20px"><b>{{ label }}</b></p></div>-->
+        <!--{% endfor %}-->
+    </div>
+    <!--<div style="width:50%; float:right">-->
+        <!--<table>-->
+            <!--<td>-->
+            <!--<td>-->
+                <!--<div>Class 1:</div>-->
+                <!--<div><img src="{{ url_for('static', filename = 'thumbnail/1.jpg') }}"></div>-->
+
+
+                <!--<div style="margin-top:10px">Class 2:</div>-->
+                <!--<div><img src="{{ url_for('static', filename = 'thumbnail/2.jpg') }}"></div>-->
+
+
+                <!--<div style="margin-top:10px">Class 3:</div>-->
+                <!--<div><img src="{{ url_for('static', filename = 'thumbnail/3.jpg') }}"></div>-->
+
+
+                <!--<div style="margin-top:10px">Class 4:</div>-->
+                <!--<div><img src="{{ url_for('static', filename = 'thumbnail/4.jpg') }}"></div>-->
+
+
+                <!--<div style="margin-top:10px">Class 5:</div>-->
+                <!--<div><img src="{{ url_for('static', filename = 'thumbnail/5.jpg') }}"></div>-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--<div style="margin-left:30px;">-->
+                    <!--<div>Class 6:</div>-->
+                    <!--<div><img src="{{ url_for('static', filename = 'thumbnail/6.jpg') }}"></div>-->
+
+
+                    <!--<div style="margin-top:10px">Class 7:</div>-->
+                    <!--<div><img src="{{ url_for('static', filename = 'thumbnail/7.jpg') }}"></div>-->
+
+                    <!--<div style="margin-top:10px">Class 8:</div>-->
+                    <!--<div><img src="{{ url_for('static', filename = 'thumbnail/8.jpg') }}"></div>-->
+
+                    <!--<div style="margin-top:10px">Class 9:</div>-->
+                    <!--<div><img src="{{ url_for('static', filename = 'thumbnail/9.jpg') }}"></div>-->
+
+                    <!--<div style="margin-top:10px">Class 10:</div>-->
+                    <!--<div><img src="{{ url_for('static', filename = 'thumbnail/10.jpg') }}"></div>-->
+                <!--</div>-->
+            <!--</td>-->
+        <!--</table>-->
+    <!--</div>-->
+</div>
+
+{% endblock %}
